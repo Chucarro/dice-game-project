@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Cascadia;
+    src: url("Fonts/CascadiaCode-BoldItalic.ttf");
+    font-weight: 800;
+}
+
+
+@font-face {
+    font-family: Inter;
+    src: url("Fonts/Inter-ExtraLight.ttf");
+    font-weight: 100;
+}
