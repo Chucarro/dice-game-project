@@ -33,6 +33,22 @@ body {
     max-width: 80%;
 }
 
+.btn {
+    font-family: Cascadia;
+    border: none;
+    padding: .1rem 1rem;
+    background-color: #4eaff3;
+    border-radius: 7px;
+    margin-top: 1rem;
+    font-size: 2rem;
+    transition: background-color .3s;
+}
+
+.btn:hover {
+    background-color: #4eaaa3;
+    cursor: pointer;
+}
+
 
 .footer {
     margin-top: 5%;
@@ -51,4 +67,16 @@ body {
 .footer a:hover {
     color:#4eaaa3;
     text-decoration: underline;
+}
+
+
+
+@media (max-width:900px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .dice-content-container {
+        display: flex;
+    }
 }
