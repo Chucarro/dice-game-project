@@ -8,9 +8,9 @@ var randomImgSrc2 = "images/dice" + randomnum2 + ".png";
 
 var dice1 = document.querySelectorAll(".player-dice-img")[0];
 var dice2 = document.querySelectorAll(".player-dice-img")[1];
-
-dice1.setAttribute("src", randomImgSrc);
-dice2.setAttribute("src",randomImgSrc2);
+function playGame () {
+    dice1.setAttribute("src", randomImgSrc);
+    dice2.setAttribute("src",randomImgSrc2);
 
     if (randomnum > randomnum2) {
         document.querySelector(".title").innerHTML = "🏆Player 1 Wins!!";
@@ -21,4 +21,5 @@ dice2.setAttribute("src",randomImgSrc2);
     else {
         document.querySelector(".title").innerHTML = "Draw!";
     }
-
+    setTimeout(function(){location.reload()}, 3000);
+}
